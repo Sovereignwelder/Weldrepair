@@ -1,528 +1,117 @@
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional mobile welding repair services and certified welding inspection in Oldsmar, Tampa Bay, and throughout Florida. 24/7 emergency repairs available.">
-    <meta name="keywords" content="mobile welding, weld repair, welding inspector, CWI, Oldsmar, Tampa Bay, Florida, emergency welding, certified welding, on-site welding">
-    <title>WELDING | Professional Mobile Welding & CWI Services in Tampa Bay</title>
-    <link rel="icon" href="weldrepair.com/media/weldrepair-logo-favicon.png" type="image/png">
+    <meta name="description" content="Expert mobile welding services in Pinellas, Hillsboro, and Pasco counties, specializing in stainless steel welding repairs for restaurants and commercial kitchens.">
+    <title>Mobile Welder - Weld Repair</title>
     <style>
-        /* Reset and Base Styles */
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        
-        body {
-            background-image: url('weldrepair.com/media/welding-background-image.jpg');
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: center;
+            background-color: #f4f4f4;
             color: #333;
-            line-height: 1.6;
         }
-        
-        /* Container */
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            padding-top: 80px; /* Space for fixed header */
-        }
-        
-        /* Header */
         header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: rgba(0, 40, 85, 0.9);
+            background-color: #007BFF;
             color: white;
-            padding: 15px 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo img {
-            height: 40px;
-            margin-right: 10px;
-        }
-        
-        .logo h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-        }
-        
-        .services-nav {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .services-nav a {
-            color: white;
-            text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-            font-size: 0.9rem;
-        }
-        
-        .services-nav a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-        
-        /* Content Boxes */
-        .content-box {
-            background: rgba(255, 255, 255, 0.85);
-            border-radius: 15px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.8));
-            border: 1px solid rgba(255, 255, 255, 0.6);
-        }
-        
-        .content-box h2 {
-            color: #002855;
-            margin-bottom: 15px;
-            font-size: 1.8rem;
-            border-bottom: 2px solid #0057a6;
-            padding-bottom: 10px;
-        }
-        
-        .content-box p {
-            margin-bottom: 15px;
-        }
-        
-        /* Hero Section */
-        .hero {
+            padding: 10px 0;
             text-align: center;
-            padding: 40px 20px;
-            border-radius: 15px;
-            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
-            margin-bottom: 30px;
         }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            color: #002855;
-            margin-bottom: 15px;
+        h1 {
+            margin: 0;
         }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 25px;
-        }
-        
-        .hero-cta {
-            display: inline-block;
-            background-color: #0057a6;
-            color: white;
-            padding: 12px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s;
-        }
-        
-        .hero-cta:hover {
-            background-color: #003d73;
-        }
-        
-        /* Services Section */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 20px;
-        }
-        
-        .service-card {
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 12px;
+        .container {
             padding: 20px;
-            text-align: center;
-            transition: transform 0.3s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .service-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-        
-        .service-card h3 {
-            color: #002855;
-            margin-bottom: 10px;
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            margin-top: 40px;
-        }
-        
-        .testimonial-card {
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            position: relative;
-        }
-        
-        .testimonial-card:before {
-            content: '"';
-            font-size: 60px;
-            color: rgba(0, 87, 166, 0.2);
-            position: absolute;
-            top: 10px;
-            left: 10px;
-        }
-        
-        .testimonial-content {
-            padding-left: 30px;
-        }
-        
-        .testimonial-author {
+        .service-area {
             font-weight: bold;
-            color: #0057a6;
-            margin-top: 10px;
-            text-align: right;
+            color: #007BFF;
         }
-        
-        /* Contact Section */
-        .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .contact-method {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        
-        .contact-method i {
-            font-size: 1.5rem;
-            color: #0057a6;
-            margin-right: 10px;
-        }
-        
-        /* Map */
-        .map-container {
-            height: 300px;
-            border-radius: 12px;
-            overflow: hidden;
-            margin-top: 20px;
-        }
-        
-        /* Floating Buttons */
-        .floating-btn {
+        .button {
             position: fixed;
-            bottom: 30px;
-            padding: 12px 20px;
-            background-color: #0057a6;
-            color: white;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            z-index: 100;
-            transition: background-color 0.3s;
-        }
-        
-        .floating-btn:hover {
-            background-color: #003d73;
-        }
-        
-        .call-now {
-            left: 20px;
-        }
-        
-        .schedule {
+            bottom: 20px;
             right: 20px;
-        }
-        
-        /* Footer */
-        footer {
-            background: rgba(0, 40, 85, 0.9);
+            background-color: #28a745;
             color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
             text-align: center;
-            padding: 20px;
-            margin-top: 50px;
+            line-height: 60px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
         }
-        
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
+        .photo-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #eaeaea;
+            margin: 10px 0;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        
-        .footer-section {
-            flex: 1;
-            min-width: 250px;
-            margin-bottom: 20px;
-        }
-        
-        .footer-section h3 {
-            margin-bottom: 15px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-            padding-bottom: 5px;
-        }
-        
-        .footer-section ul {
-            list-style: none;
-        }
-        
-        .footer-section ul li {
-            margin-bottom: 8px;
-        }
-        
-        .footer-section a {
-            color: white;
-            text-decoration: none;
-        }
-        
-        .footer-section a:hover {
-            text-decoration: underline;
-        }
-        
-        .copyright {
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive Adjustments */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .logo {
-                margin-bottom: 10px;
-                justify-content: center;
-            }
-            
-            .services-nav {
-                justify-content: center;
-                flex-wrap: wrap;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .floating-btn {
-                padding: 10px 15px;
-                font-size: 0.9rem;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                padding: 10px;
-                padding-top: 120px; /* More space for stacked header */
-            }
-            
-            .hero {
-                padding: 30px 15px;
-            }
-            
-            .hero h1 {
-                font-size: 1.8rem;
-            }
-            
-            .content-box {
-                padding: 15px;
-            }
-            
-            .content-box h2 {
-                font-size: 1.5rem;
-            }
-            
-            .floating-btn {
-                bottom: 15px;
-            }
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: #999;
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                <img src="weldrepair.com/media/weldrepair-logo.png" alt="WeldRepair Logo - Mobile Welding Services in Tampa Bay">
-                <h1>WeldRepair.com</h1>
-            </div>
-            <nav class="services-nav">
-                <a href="#mobile-welding">Mobile Welding</a>
-                <a href="#cwi-services">CWI Services</a>
-                <a href="#service-areas">Service Areas</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </div>
-    </header>
 
-    <div class="container">
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>Professional Mobile Welding & Inspection Services</h1>
-            <p>Expert welding repairs and certified welding inspection throughout Tampa Bay and Florida</p>
-            <a href="#contact" class="hero-cta">Get a Free Quote</a>
-        </section>
+<header>
+    <h1>Mobile Welding Services</h1>
+    <p>Specializing in Stainless Steel Welding Repairs</p>
+</header>
 
-        <!-- Main Services -->
-        <section id="mobile-welding" class="content-box">
-            <h2>Mobile Welding Services</h2>
-            <p>We bring professional welding services directly to your location, saving you time and transportation costs. Our fully-equipped mobile welding unit allows us to perform high-quality repairs and fabrication on-site.</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="weldrepair.com/media/emergency-welding-repair-tampa.jpg" alt="Emergency welding repair service in Tampa Bay area">
-                    <h3>Emergency Repairs</h3>
-                    <p>24/7 emergency welding repairs for critical equipment and infrastructure throughout Tampa Bay.</p>
-                </div>
-                
-                <div class="service-card">
-                    <img src="weldrepair.com/media/structural-welding-services-florida.jpg" alt="Structural welding services in Florida">
-                    <h3>Structural Welding</h3>
-                    <p>Certified structural welding for buildings, equipment, and heavy machinery repairs.</p>
-                </div>
-                
-                <div class="service-card">
-                    <img src="weldrepair.com/media/marine-welding-repairs-tampa-bay.jpg" alt="Marine welding repairs in Tampa Bay">
-                    <h3>Marine Welding</h3>
-                    <p>Specialized welding services for boats, docks, and marine equipment throughout Florida's coast.</p>
-                </div>
-            </div>
-        </section>
+<div class="container">
+    <h2>Your Trusted Mobile Welder</h2>
+    <p>Welcome to <strong>weldrepair.com</strong>, your go-to mobile welding service in <span class="service-area">Pinellas, Hillsboro, and Pasco counties, Florida</span>. We specialize in stainless steel welding repairs, particularly for the restaurant and commercial kitchen industries.</p>
+    
+    <div class="photo-placeholder">[Photo Placeholder: Stainless Steel Welding]</div>
+    
+    <h3>Our Services</h3>
+    <p>We can weld anything made of metal and often take jobs outside of our specialization. Whether you need repairs for your commercial kitchen equipment or custom metal work, we have you covered!</p>
+    
+    <div class="photo-placeholder">[Photo Placeholder: Commercial Kitchen Welding]</div>
+    
+    <h3>Contact Us</h3>
+    <p>Ready to get started? Reach out to us today!</p>
+    <p>Email: <a href="mailto:service@weldrepair.com">service@weldrepair.com</a></p>
+    <p>Phone: <a href="tel:7272441667">727-244-1667</a></p>
+</div>
 
-        <!-- CWI Services -->
-        <section id="cwi-services" class="content-box">
-            <h2>Certified Welding Inspector (CWI) Services</h2>
-            <p>Our AWS Certified Welding Inspectors ensure your welding projects meet all required codes and standards. We provide comprehensive inspection services to verify weld quality and compliance.</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="weldrepair.com/media/weld-quality-inspection-tampa.jpg" alt="Weld quality inspection services in Tampa">
-                    <h3>Weld Quality Inspection</h3>
-                    <p>Thorough inspection and documentation of welds to ensure they meet project specifications.</p>
-                </div>
-                
-                <div class="service-card">
-                    <img src="weldrepair.com/media/code-compliance-verification-florida.jpg" alt="Code compliance verification in Florida">
-                    <h3>Code Compliance</h3>
-                    <p>Verification that all welding work meets AWS, ASME, API, and other applicable codes.</p>
-                </div>
-                
-                <div class="service-card">
-                    <img src="weldrepair.com/media/welding-procedure-development-tampa-bay.jpg" alt="Welding procedure development in Tampa Bay">
-                    <h3>Procedure Development</h3>
-                    <p>Development and qualification of welding procedures to meet your specific project needs.</p>
-                </div>
-            </div>
-        </section>
+<button class="button" onclick="saveContact()">*welder</button>
 
-        <!-- Service Areas -->
-        <section id="service-areas" class="content-box">
-            <h2>Service Areas</h2>
-            <p>Based in Oldsmar, we proudly serve clients throughout Tampa Bay and the entire state of Florida. Our mobile welding units can reach your location quickly to provide timely service.</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="weldrepair.com/media/tampa-bay-service-area-map.jpg" alt="Tampa Bay welding service area map">
-                    <h3>Tampa Bay Area</h3>
-                    <p>Serving Tampa, St. Petersburg, Clearwater, Oldsmar, Largo, Pinellas Park, and surrounding communities.</p>
-                </div>
-                
-                <div class="service-card">
-                    <img src="weldrepair.com/media/florida-statewide-welding-services.jpg" alt="Florida statewide mobile welding services">
-                    <h3>Statewide Service</h3>
-                    <p>Available for projects throughout Florida, including Orlando, Miami, Jacksonville, and the Florida Keys.</p>
-                </div>
-                
-                <div class="service-card">
-                    <img src="weldrepair.com/media/oldsmar-welding-headquarters.jpg" alt="Oldsmar welding company headquarters">
-                    <h3>Oldsmar Headquarters</h3>
-                    <p>Our central location allows us to quickly respond to service calls throughout the region.</p>
-                </div>
-            </div>
-        </section>
+<script>
+    function saveContact() {
+        const contactInfo = {
+            name: '*welder',
+            email: 'service@weldrepair.com',
+            phone: '727-244-1667'
+        };
+        const vCard = `BEGIN:VCARD
+VERSION:3.0
+FN:${contactInfo.name}
+EMAIL:${contactInfo.email}
+TEL:${contactInfo.phone}
+END:VCARD`;
+        const blob = new Blob([vCard], { type: 'text/vcard' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `${contactInfo.name}.vcf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }
+</script>
 
-        <!-- Testimonials -->
-        <section class="content-box testimonials">
-            <h2>What Our Clients Say</h2>
-            
-            <div class="testimonial-card">
-                <div class="testimonial-content">
-                    <p>The team at WeldRepair.com saved our production line with their emergency welding service. They arrived within an hour of our call and completed the repair professionally. Highly recommended!</p>
-                    <div class="testimonial-author">- Tampa Manufacturing Company</div>
-                </div>
-            </div>
-            
-            <div class="testimonial-card">
-                <div class="testimonial-content">
-                    <p>As a marina owner in St. Petersburg, I rely on WeldRepair.com for all our dock and boat lift welding needs. Their marine welding expertise is unmatched in the Tampa Bay area.</p>
-                    <div class="testimonial-author">- Waterfront Marina, St. Petersburg</div>
-                </div>
-            </div>
-            
-            <div class="testimonial-card">
-                <div class="testimonial-content">
-                    <p>Their CWI services ensured our construction project met all code requirements. The inspector was thorough, professional, and helped us avoid costly rework.</p>
-                    <div class="testimonial-author">- Florida Construction Group</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="content-box">
-            <h2>Contact Us</h2>
-            <p>Ready to discuss your welding needs? Contact us today for a free consultation and quote.</p>
-            
-            <div class="contact-info">
-                <div>
-                    <div class="contact-method">
-                        <i>📱</i>
-                        <p>Phone: (727) 244-1667</p>
-                    </div>
-                    <div class="contact-method">
-                        <i>📧</i>
-                        <p>Email: info@weldrepair.com</p>
-                    </div>
-                    <div class="contact-method">
-                        <i>📍</i>
-                        <p>Address: Oldsmar, FL (Serving all of Tampa
+</body>
+</html>
